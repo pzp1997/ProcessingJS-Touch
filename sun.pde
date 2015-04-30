@@ -10,6 +10,7 @@ float rays[];
 float cpy2 = 1425;
 float y2 = 150;
 float touchY;
+
 void setup() {
   size(1200, 700);
 }
