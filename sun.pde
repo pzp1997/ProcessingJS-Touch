@@ -23,8 +23,11 @@ void draw() {
     curve(cpx, cpy , mouseX,mouseY, x1, y1, cpx1, cpy1);
     curve(cpx, cpy2, x, y2, x1, y1, cpx1, cpy1);
     rotate(radians(30));
-  // fill(20,30,240);
-   //fill(random(30,250),30, 100);
+
   }
   
 }
+
+void mouseDragged() {
+    touchY = mouseY;
+  }
