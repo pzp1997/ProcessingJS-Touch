@@ -9,6 +9,7 @@ float cpy1 = -925;
 float rays[];
 float cpy2 = 1425;
 float y2 = 150;
+float touchY;
 void setup() {
   size(1200, 700);
 }
@@ -20,7 +21,7 @@ void draw() {
   translate(width/2,height/2);
   //translate(mouseX,mouseY);
   for (int i = 0; i < 12; i++) {
-    curve(cpx, cpy , mouseX,mouseY, x1, y1, cpx1, cpy1);
+    curve(cpx, cpy , touchY,touchY, x1, y1, cpx1, cpy1);
     curve(cpx, cpy2, x, y2, x1, y1, cpx1, cpy1);
     rotate(radians(30));
 
