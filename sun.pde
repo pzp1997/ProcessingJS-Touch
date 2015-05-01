@@ -9,6 +9,7 @@ float cpy1 = -925;
 float rays[];
 float cpy2 = 1425;
 float y2 = 150;
+float pageY;
 
 void setup() {
   size(400, 400);
@@ -18,13 +19,19 @@ void setup() {
 }
 void draw() {}
 
-void touchMove(TouchEvent e) {
-  float touchY = e.touches[0].offsetY;
+void animation() {
   background(137);
   translate(width/2,height/2);
   for (int i = 0; i < 12; i++) {
-    curve(cpx, cpy , x, touchY, x1, y1, cpx1, cpy1);
-    curve(cpx, cpy2, x, touchY, x1, y1, cpx1, cpy1);
+    curve(cpx, cpy , x, pageY, x1, y1, cpx1, cpy1);
+    curve(cpx, cpy2, x, pageY, x1, y1, cpx1, cpy1);
     rotate(radians(30));
   }
+}
+
+void mousePressed() {
+  pageY = mouseY;
+}
+void touchStart(TouchEvent e) {
+  pageY = e.touches[0].offsetY;
 }
