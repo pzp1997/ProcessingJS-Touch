@@ -3,6 +3,7 @@ float pageY;
 
 void setup() {
   size(400, 400);
+  background(137);
   noFill();
   stroke(250,250,250);
   //strokeWeight(60);
