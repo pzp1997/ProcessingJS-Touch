@@ -12,7 +12,7 @@ float y2 = 150;
 float touchY;
 
 void setup() {
-  size(displayWidth, displayHeight);
+  size(400, 400);
 }
 void draw() {
   background(137);
