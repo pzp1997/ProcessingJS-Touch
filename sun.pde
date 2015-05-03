@@ -16,10 +16,7 @@ void draw() {
   }
 }
 
-void mousePressed() {
-  pageY = mouseY;
-}
-void mouseDragged() {
+void mouseMoved() {
   pageY = mouseY;
 }
 void touchStart(e) {
