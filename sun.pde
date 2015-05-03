@@ -21,10 +21,12 @@ void mouseMoved() {
   pageY = mouseY;
 }
 void touchStart(e) {
+  e.preventDefault();
   pageX = e.touches[0].offsetX;
   pageY = e.touches[0].offsetY;
 }
 void touchMove(e) {
+  e.preventDefault();
   pageX = e.touches[0].offsetX;
   pageY = e.touches[0].offsetY;
 }
