@@ -17,12 +17,14 @@ void draw() {
 }
 
 void mouseMoved() {
+  pageX = mouseX;
   pageY = mouseY;
 }
 void touchStart(e) {
+  pageX = e.touches[0].offsetX;
   pageY = e.touches[0].offsetY;
 }
 void touchMoved(e) {
+  pageX = e.touches[0].offsetX;
   pageY = e.touches[0].offsetY;
 }
-
