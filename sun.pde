@@ -1,12 +1,12 @@
 var pageX = pageY = 0;
 
-void setup() {
+function setup() {
   size(window.innerWidth, window.innerHeight);
   noFill();
   stroke(250, 250, 250);
 }
 
-void draw() {
+function draw() {
   background(137);
   translate(width/2,height/2);
   for (int i = 0; i < 12; i++) {
@@ -16,9 +16,9 @@ void draw() {
   }
 }
 
-void mousePressed() {
+function mousePressed() {
   pageY = mouseY;
 }
-void touchStart(e) {
+function touchStart(e) {
   pageY = e.touches[0].offsetY;
 }
