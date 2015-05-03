@@ -10,8 +10,8 @@ void draw() {
   background(137);
   translate(width/2,height/2);
   for (int i = 0; i < 12; i++) {
-    curve(75, 925, 0, pageX+pageY, 300, 25, 75, -925);
-    curve(75, 1425, 0, pageX+pageY, 300, 25, 75, -925);
+    curve(75, 925, 0, pageY, 300, 25, pageX, -925);
+    curve(75, 1425, 0, pageY, 300, 25, pageX, -925);
     rotate(PI/6);
   }
 }
