@@ -24,7 +24,7 @@ void touchStart(e) {
   pageX = e.touches[0].offsetX;
   pageY = e.touches[0].offsetY;
 }
-void touchMoved(e) {
+void touchMove(e) {
   pageX = e.touches[0].offsetX;
   pageY = e.touches[0].offsetY;
 }
