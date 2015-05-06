@@ -6,12 +6,23 @@
   <meta name=viewport content="width=device-width, initial-scale=1, user-scalable=no">
   -->
   <title>THE SUN</title>
-  <script type="text/javascript" src="scripts/main.js"></script>
   <script src="processing.js"></script>
 </head>
 
 <body>
   <canvas data-processing-sources="sun.pde"></canvas>
+  <script type="text/javascript">
+    var touchX, touchY;
+    
+    var touchHandler = function (event) {
+      event.preventDefault();
+      touchX = e.touches[0].offsetX;
+      touchY = e.touches[0].offsetY;
+    }
+    
+    document.addEventListener("touchstart", touchHandler);
+    document.addEventListener("touchmove", touchHandler);
+  </script>
 </body>
 
 </html>
