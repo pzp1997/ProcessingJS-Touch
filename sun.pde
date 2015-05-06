@@ -1,11 +1,11 @@
 var touchX, touchY;
-var log = document.createElement("p");
+var log = document.createElement("div");
 
 var touchHandler = function (event) {
   event.preventDefault();
   touchX = event.touches[0].offsetX;
   touchY = event.touches[0].offsetY;
-  log.appendChild(touchX, touchY)
+  log.appendChild(document.createElement("p").appendChild(document.createTextNode(touchX + touchY)));
 }
 
 document.addEventListener("touchstart", touchHandler);
