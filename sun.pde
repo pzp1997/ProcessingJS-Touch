@@ -14,12 +14,11 @@ void draw() {
     curve(75, 1425, 0, (pageX+pageY)/2, 300, 25, 75, -925);
     rotate(PI/6);
   }
+  pageX = touchX || mouseX;
+  pageY = touchY || mouseY;
 }
 
-void mouseMoved() {
-  pageX = mouseX;
-  pageY = mouseY;
-}
+/*
 void touchStart(e) {
   e.preventDefault();
   pageX = e.touches[0].offsetX;
@@ -30,3 +29,4 @@ void touchMove(e) {
   pageX = e.touches[0].offsetX;
   pageY = e.touches[0].offsetY;
 }
+*/
