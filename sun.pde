@@ -13,3 +13,8 @@ void draw() {
     rotate(PI/6);
   }
 }
+
+void mouseMoved() {
+  touchX = mouseX;
+  touchY = mouseY;
+}
