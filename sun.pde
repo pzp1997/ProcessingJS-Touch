@@ -1,4 +1,4 @@
-var touchX, touchY;
+float touchX, touchY;
 
 var touchHandler = function (event) {
   event.preventDefault();
