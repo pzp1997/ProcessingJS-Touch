@@ -6,5 +6,5 @@ var touchHandler = function (event) {
   touchY = event.changedTouches[0].pageY;
 }
 
-document.addEventListener("touchstart", touchHandler);
-document.addEventListener("touchmove", touchHandler);
+document.addEventListener("touchstart", touchHandler, false);
+document.addEventListener("touchmove", touchHandler, false);
