@@ -1,9 +1,11 @@
 var touchX, touchY;
+var log = document.createElement("p");
 
 var touchHandler = function (event) {
+  event.preventDefault();
   touchX = event.touches[0].offsetX;
   touchY = event.touches[0].offsetY;
-  event.preventDefault();
+  log.appendChild(touchX, touchY)
 }
 
 document.addEventListener("touchstart", touchHandler);
