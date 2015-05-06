@@ -1,9 +1,9 @@
 var touchX, touchY;
 
 var touchHandler = function (event) {
-  event.preventDefault();
   touchX = event.touches[0].offsetX;
   touchY = event.touches[0].offsetY;
+  event.preventDefault();
 }
 
 document.addEventListener("touchstart", touchHandler);
