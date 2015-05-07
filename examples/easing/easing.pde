@@ -10,8 +10,8 @@ void setup() {
 }
 
 void draw() {
-  pageX = mouseX || touchX;
-  pageY = mouseY || touchY;
+  pageX = (touchX !== undefined) ? touchX : mouseX;
+  pageY = (touchY !== undefined) ? touchY : mouseY;
   background(#444444);
   ellipse(x, y, DIAM, DIAM);
   x += (pageX - x) * EASING;
