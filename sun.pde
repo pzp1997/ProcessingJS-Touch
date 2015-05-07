@@ -7,8 +7,8 @@ void setup() {
 }
 
 void draw() {
-  pageX = (touchX !== null) ? touchX : mouseX;
-  pageY = (touchY !== null) ? touchY : mouseY;
+  pageX = (touchX !== undefined) ? touchX : mouseX;
+  pageY = (touchY !== undefined) ? touchY : mouseY;
   background(137);
   translate(width/2,height/2);
   for (int i = 0; i < 12; i++) {
