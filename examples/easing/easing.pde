@@ -4,7 +4,7 @@ final float DIAM = 60;
 float pageX, pageY;
 
 void setup() {
-  size(300, 300);
+  size(window.innerWidth, window.innerHeight);
   fill(#ffffff);
   noStroke();
 }
