@@ -4,14 +4,15 @@ final float DIAM = 60;
 float pageX, pageY;
 
 void setup() {
-  size(window.innerWidth, window.innerHeight);
+  size(displayWidth, displayHeight);
   fill(#ffffff);
   noStroke();
 }
 
 void draw() {
-  pageX = (touchX !== undefined) ? touchX : mouseX;
-  pageY = (touchY !== undefined) ? touchY : mouseY;
+  pageX = touch ? touchX : mouseX;
+  pageY = touch ? touchY : mouseY;
+
   background(#444444);
   ellipse(x, y, DIAM, DIAM);
   x += (pageX - x) * EASING;
